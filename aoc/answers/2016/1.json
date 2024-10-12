@@ -1,0 +1,36 @@
+{
+  "part1": [
+    {
+      "answer": 278,
+      "time": "2024-10-12T09:33:41.142Z",
+      "response": "That's the right answer!  You are one gold star closer to fixing the sleigh. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 300,
+      "time": "2024-10-12T09:37:44.657Z",
+      "response": "That's not the right answer; your answer is too high.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 1]",
+      "correct": false
+    },
+    {
+      "answer": 301,
+      "time": "2024-10-12T09:43:10.300Z",
+      "response": "That's not the right answer; your answer is too high.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 1]",
+      "correct": false
+    },
+    {
+      "answer": 143,
+      "time": "2024-10-12T10:49:10.023Z",
+      "response": "That's not the right answer; your answer is too low.  Curiously, it's the right answer for someone else; you might be logged in to the wrong account or just unlucky. In any case, you need to be using your puzzle input.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 1]",
+      "correct": false
+    },
+    {
+      "answer": 161,
+      "time": "2024-10-12T10:58:27.904Z",
+      "response": "That's the right answer!  You are one gold star closer to fixing the sleigh.You have completed Day 1! You can [Shareon\n  Twitter\n  Mastodon] this victory or [Return to Your Advent Calendar].",
+      "correct": true
+    }
+  ]
+}
