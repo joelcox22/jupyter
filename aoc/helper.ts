@@ -1,6 +1,15 @@
+import * as fs from "jsr:@std/fs";
+import * as path from "jsr:@std/path";
+
 export async function getInput(year: number, day: number): Promise<string> {
+  const file = path.join(
+    import.meta.dirname!,
+    "inputs",
+    year.toString(),
+    `${day}.txt`
+  );
   try {
-    return await Deno.readTextFile("input.txt");
+    return await Deno.readTextFile(file);
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
       const url = `https://adventofcode.com/${year}/day/${day}/input`;
@@ -12,7 +21,8 @@ export async function getInput(year: number, day: number): Promise<string> {
       });
       const response = await data;
       const text = await response.text();
-      Deno.writeTextFile("input.txt", text);
+      await fs.ensureDir(path.dirname(file));
+      await Deno.writeTextFile(file, text);
       return text;
     } else {
       throw err;
