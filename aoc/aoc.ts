@@ -2,6 +2,7 @@ import * as fs from "jsr:@std/fs";
 import * as path from "jsr:@std/path";
 import * as cheerio from "npm:cheerio";
 import * as htmlEntities from "jsr:@std/html/entities";
+import { DOMParser } from "npm:linkedom@0.18";
 
 async function getCookie(): Promise<string> {
   const file = path.join(import.meta.dirname!, "cookie.txt");
@@ -237,3 +238,8 @@ export default class Aoc {
     return answer(this.year, this.day, 2, value, this.page);
   }
 }
+
+export const document = new DOMParser().parseFromString(
+  `<!DOCTYPE html><html lang="en"></html>`,
+  "text/html"
+);
