@@ -240,7 +240,7 @@ export default class Aoc {
   }
 }
 
-export async function draw(...marks: Plot.Markish[]) {
+export function draw(...marks: Plot.Markish[]) {
   const plot = Plot.plot({
     width: 1000,
     height: 600,
