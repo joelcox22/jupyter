@@ -248,6 +248,7 @@ export async function draw(...marks: Plot.Markish[]) {
     height: 600,
     style: {
       background: "white",
+      color: "black",
     },
     marks,
     document: new JSDOM("").window.document,
