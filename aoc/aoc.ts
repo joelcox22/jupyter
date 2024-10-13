@@ -244,7 +244,6 @@ export async function draw(...marks: Plot.Markish[]) {
   const plot = Plot.plot({
     width: 1000,
     height: 600,
-
     style: {
       background: "white",
       color: "black",
@@ -252,6 +251,5 @@ export async function draw(...marks: Plot.Markish[]) {
     marks,
     document: new JSDOM("").window.document,
   });
-  return Deno.jupyter
-    .svg`<?xml version="1.0" encoding="UTF-8"?>${plot.outerHTML}`;
+  return Deno.jupyter.svg`${plot.outerHTML.replaceAll("−", "-", "g")}`;
 }
