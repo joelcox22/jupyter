@@ -4,8 +4,6 @@ import * as cheerio from "npm:cheerio";
 import * as htmlEntities from "jsr:@std/html/entities";
 import * as Plot from "npm:@observablehq/plot";
 import { JSDOM } from "npm:jsdom";
-import sharp from "npm:sharp";
-import { Buffer } from "node:buffer";
 
 async function getCookie(): Promise<string> {
   const file = path.join(import.meta.dirname!, "cookie.txt");
@@ -254,9 +252,4 @@ export async function draw(...marks: Plot.Markish[]) {
     document: new JSDOM("").window.document,
   });
   return Deno.jupyter.svg`${plot.outerHTML}`;
-  // return Deno.jupyter.display({ "image/svg": plot.outerHTML }, { raw: true });
-  /*
-  const png = await sharp(Buffer.from(plot.outerHTML, "utf-8")).png();
-  return Deno.jupyter.display({ "image/svg": png }, { raw: true });
-  */
 }
