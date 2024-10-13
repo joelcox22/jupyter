@@ -220,7 +220,7 @@ export default class Aoc {
     const input = await getInput(year, day);
     html(`
       <p>To begin, here's your puzzle input:</p>
-      <code class="input">${htmlEntities.escape(input)}</code>
+      <code class="input"><pre>${htmlEntities.escape(input)}</pre></code>
     `);
     const aoc = new Aoc(year, day, input, page);
     return aoc;
