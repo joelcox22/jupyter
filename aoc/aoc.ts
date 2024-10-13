@@ -63,20 +63,15 @@ interface Page {
 function html(str: string | null) {
   if (!str) return;
   Deno.jupyter.display(Deno.jupyter.html`
-    <style>
-      * {
-        font-family: courier;
-        font-size: 1.1em;
-      }
-      code.input {
-        display: block;
-        max-height: 200px;
-        overflow: auto;
-        margin-top: 10px;
-        white-space: pre;
-      }
-    </style>
-    ${str}
+    <div>
+      <style scoped>
+        * {
+          font-family: courier;
+          font-size: 1.1em;
+        }
+      </style>
+      ${str}
+    </div>
   `);
 }
 
@@ -220,7 +215,9 @@ export default class Aoc {
     const input = await getInput(year, day);
     html(`
       <p>To begin, here's your puzzle input:</p>
-      <code class="input"><pre>${htmlEntities.escape(input)}</pre></code>
+      <code style="display: block; max-height: 400px; overflow: auto; padding: 4px; font-family: courier; white-space: pre;">${htmlEntities.escape(
+        input
+      )}</code>
     `);
     const aoc = new Aoc(year, day, input, page);
     return aoc;
