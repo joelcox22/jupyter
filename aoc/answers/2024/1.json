@@ -1,0 +1,24 @@
+{
+  "part1": [
+    {
+      "answer": 877009,
+      "time": "2024-12-01T05:20:11.578Z",
+      "response": "That's not the right answer.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 1]",
+      "correct": false
+    },
+    {
+      "answer": 1590491,
+      "time": "2024-12-01T05:23:46.882Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 22588371,
+      "time": "2024-12-01T05:27:23.190Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian.You have completed Day 1! You can [Shareon\n  Bluesky\n  Twitter\n  Mastodon] this victory or [Return to Your Advent Calendar].",
+      "correct": true
+    }
+  ]
+}
