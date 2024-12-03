@@ -1,0 +1,18 @@
+{
+  "part1": [
+    {
+      "answer": 170068701,
+      "time": "2024-12-03T05:05:15.936Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 78683433,
+      "time": "2024-12-03T05:10:07.062Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian.You have completed Day 3! You can [Shareon\n  Bluesky\n  Twitter\n  Mastodon] this victory or [Return to Your Advent Calendar].",
+      "correct": true
+    }
+  ]
+}
