@@ -32,7 +32,7 @@ export class Viz {
     const outfile = path.join(this.tmpDir, 'output.mp4');
     await $`/opt/homebrew/bin/ffmpeg -framerate ${fps} -pattern_type glob -i ${path.join(this.tmpDir, '*.png')} -r ${fps} -c:v libx264 -pix_fmt yuv420p ${outfile}`;
     const out = fs.readFileSync(outfile);
-    Deno.jupyter.display(Deno.jupyter.html`<video controls><source src="data:video/mp4;base64,${out.toString('base64')}"></video>`);
+    Deno.jupyter.display(Deno.jupyter.md`<video controls><source src="data:video/mp4;base64,${out.toString('base64')}"></video>`);
     if (filename) {
       console.log('copying', outfile, 'to', filename)
       fs.cpSync(outfile, filename);
