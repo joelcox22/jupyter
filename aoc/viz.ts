@@ -36,9 +36,7 @@ export class Viz {
     if (filename) {
       console.log('copying', outfile, 'to', filename)
       fs.cpSync(outfile, filename);
-      Deno.jupyter.display(Deno.jupyter.md`![video](./${filename})
-        
-https://github.com/user-attachments/assets/d82f9cc6-0d68-4fdb-aad1-2e66b0dc97e9`)
+      Deno.jupyter.display(Deno.jupyter.md`https://github.com/user-attachments/assets/d82f9cc6-0d68-4fdb-aad1-2e66b0dc97e9`)
     }
   }
 }
