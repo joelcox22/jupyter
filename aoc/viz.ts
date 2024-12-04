@@ -32,6 +32,6 @@ export class Viz {
     const outfile = path.join(this.tmpDir, 'output.mp4');
     await $`/opt/homebrew/bin/ffmpeg -framerate ${fps} -pattern_type glob -i ${path.join(this.tmpDir, '*.png')} -r ${fps} -c:v libx264 -pix_fmt yuv420p ${outfile}`;
     const out = fs.readFileSync(outfile);
-    Deno.jupyter.display(Deno.jupyter.html`testing?<video controls><source src="data:video/mp4;base64,${out.toString('base64')}">video not supported</video>`);
+    Deno.jupyter.display(Deno.jupyter.html`testing?`);
   }
 }
