@@ -29,15 +29,18 @@ export class Viz {
   }
 
   async render(fps: number = 60, filename: string) {
-    const outfile = path.join(this.tmpDir, 'output.mp4');
-    await $`/opt/homebrew/bin/ffmpeg -framerate ${fps} -pattern_type glob -i ${path.join(this.tmpDir, '*.png')} -r ${fps} -c:v libx264 -pix_fmt yuv420p ${outfile}`;
+    // const outfile = path.join(this.tmpDir, 'output.mp4');
+    // await $`/opt/homebrew/bin/ffmpeg -framerate ${fps} -pattern_type glob -i ${path.join(this.tmpDir, '*.png')} -r ${fps} -c:v libx264 -pix_fmt yuv420p ${outfile}`;
+    const outfile = path.join(this.tmpDir, 'output.gif');
+    await $`/opt/homebrew/bin/ffmpeg -framerate ${fps} -pattern_type glob -i ${path.join(this.tmpDir, '*.png')} -vf "scale=320:-1:flags=lanczos" ${outfile}`;
     const out = fs.readFileSync(outfile);
+    Deno.jupyter.display(Deno.jupyter.html`<img src="data:image/gif;base64,${out.toString('base64')}" />`);
     // Deno.jupyter.display(Deno.jupyter.html`<video controls><source src="data:video/mp4;base64,${out.toString('base64')}"></video>`);
-    Deno.jupyter.display(Deno.jupyter.html`<embed src="data:video/mp4;base64,${out.toString('base64')}" width="${this.width}" height="${this.height}" />`);
-    if (filename) {
-      console.log('copying', outfile, 'to', filename)
-      fs.cpSync(outfile, filename);
-      Deno.jupyter.display(Deno.jupyter.md`![video](./${filename})`);
-    }
+    // Deno.jupyter.display(Deno.jupyter.html`<embed src="data:video/mp4;base64,${out.toString('base64')}" width="${this.width}" height="${this.height}" />`);
+    // if (filename) {
+      // console.log('copying', outfile, 'to', filename)
+      // fs.cpSync(outfile, filename);
+      // Deno.jupyter.display(Deno.jupyter.md`![video](./${filename})`);
+    // }
   }
 }
