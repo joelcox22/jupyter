@@ -1,0 +1,36 @@
+{
+  "part1": [
+    {
+      "answer": 1915,
+      "time": "2024-12-04T05:35:31.001Z",
+      "response": "That's not the right answer.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 4]",
+      "correct": false
+    },
+    {
+      "answer": 2462,
+      "time": "2024-12-04T05:36:43.477Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 240,
+      "time": "2024-12-04T05:57:59.455Z",
+      "response": "That's not the right answer.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 4]",
+      "correct": false
+    },
+    {
+      "answer": 1849,
+      "time": "2024-12-04T10:07:00.877Z",
+      "response": "That's not the right answer; your answer is too low.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 4]",
+      "correct": false
+    },
+    {
+      "answer": 1877,
+      "time": "2024-12-04T10:21:27.514Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian.You have completed Day 4! You can [Shareon\n  Bluesky\n  Twitter\n  Mastodon] this victory or [Return to Your Advent Calendar].",
+      "correct": true
+    }
+  ]
+}
