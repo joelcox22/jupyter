@@ -1,0 +1,36 @@
+{
+  "part1": [
+    {
+      "answer": 7198,
+      "time": "2024-12-05T06:38:06.992Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 4245,
+      "time": "2024-12-05T07:28:22.474Z",
+      "response": "That's not the right answer; your answer is too high.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 5]",
+      "correct": false
+    },
+    {
+      "answer": 123,
+      "time": "2024-12-05T07:30:59.313Z",
+      "response": "That's not the right answer; your answer is too low.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 5]",
+      "correct": false
+    },
+    {
+      "answer": 4122,
+      "time": "2024-12-05T07:42:58.267Z",
+      "response": "That's not the right answer.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Because you have guessed incorrectly 4 times on this puzzle, please wait 5 minutes before trying again. [Return to Day 5]",
+      "correct": false
+    },
+    {
+      "answer": 4230,
+      "time": "2024-12-05T07:48:02.385Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian.You have completed Day 5! You can [Shareon\n  Bluesky\n  Twitter\n  Mastodon] this victory or [Return to Your Advent Calendar].",
+      "correct": true
+    }
+  ]
+}
