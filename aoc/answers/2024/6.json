@@ -1,0 +1,18 @@
+{
+  "part1": [
+    {
+      "answer": 4602,
+      "time": "2024-12-06T08:01:48.453Z",
+      "response": "That's the right answer!  You are one gold star closer to finding the Chief Historian. [Continue to Part Two]",
+      "correct": true
+    }
+  ],
+  "part2": [
+    {
+      "answer": 1741,
+      "time": "2024-12-06T11:36:27.476Z",
+      "response": "That's not the right answer; your answer is too high.  If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit.  Please wait one minute before trying again. [Return to Day 6]",
+      "correct": false
+    }
+  ]
+}
